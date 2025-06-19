@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Image Gallery</title>
+  <style>
+    body {
+      background-color: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      padding: 40px;
+      font-family: Arial, sans-serif;
+    }
+
+    .gallery-container {
+      width: 900px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+    }
+
+    .gallery-container img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border: 2px solid #ccc;
+      border-radius: 6px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+  <div class="gallery-container">
+    <img src="https://picsum.photos/200?random=1" alt="Gallery 1">
+    <img src="https://picsum.photos/200?random=2" alt="Gallery 2">
+    <img src="https://picsum.photos/200?random=3" alt="Gallery 3">
+    <img src="https://picsum.photos/200?random=4" alt="Gallery 4">
+    <img src="https://picsum.photos/200?random=5" alt="Gallery 5">
+    <img src="https://picsum.photos/200?random=6" alt="Gallery 6">
+    <img src="https://picsum.photos/200?random=7" alt="Gallery 7">
+    <img src="https://picsum.photos/200?random=8" alt="Gallery 8">
+  </div>
+</body>
+</html>
