@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto auto auto;
+  grid-template-areas:
+    "header header header header"
+    "sidebar content content content"
+    "footer footer footer footer";
+  gap: 10px;
+  height: 100vh;
+}
+
+/* Common item styles */
+.item {
+  padding: 20px;
+  color: white;
+  font-size: 1.5rem;
+  background-color: rgba(0, 0, 0, 0.6); /* fallback if image doesn't load */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Assign grid areas */
+.item-1 {
+  grid-area: header;
+  background-color: #222; /* Header with solid bg */
+}
+
+.item-2 {
+  grid-area: content;
+  background-image: url('./images/gta5.jpeg');
+  background-size: contain;
+  background-color: #444;
+}
+
+.item-3 {
+  grid-area: sidebar;
+  background-image: url('./images/pubg.jpeg');
+  background-size: cover;
+}
+
+.item-4 {
+  grid-area: footer;
+  background-image: url('./images/cod.jpeg');
+  background-size: cover;
+}

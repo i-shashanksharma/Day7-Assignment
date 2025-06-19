@@ -1,0 +1,29 @@
+/* Reset some basic styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Container flex styles */
+.container {
+  display: flex;
+  height: 100vh; /* Full viewport height */
+  flex-flow: row wrap; /* Horizontal layout with wrapping */
+  justify-content: center; /* Center items horizontally */
+  align-items: center;     /* Center items vertically (within each row) */
+  align-content: center;   /* Center rows in the container */
+  gap: 10px; /* Optional spacing */
+  background-color: #f0f0f0;
+}
+
+/* Flex items */
+.item {
+  background-color: #4caf50;
+  color: white;
+  padding: 30px;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  text-align: center;
+  min-width: 100px;
+}
