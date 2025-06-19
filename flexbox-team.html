@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Meet the Team</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      padding: 40px;
+    }
+
+    .team-container {
+      width: 1000px;
+      display: flex;
+      gap: 20px;
+    }
+
+    .team-card {
+      width: 220px;
+      background-color: white;
+      padding: 15px;
+      border: 1px solid #ddd;
+      text-align: center;
+      border-radius: 8px;
+      transition: 0.3s ease;
+    }
+
+    .team-card:hover {
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .team-card img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+
+    .team-card h3 {
+      margin: 8px 0 4px;
+    }
+
+    .team-card h4 {
+      color: #888;
+      margin-bottom: 10px;
+    }
+
+    .team-card p {
+      font-size: 14px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <div class="team-container">
+    <div class="team-card">
+      <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="John">
+      <h3>John Doe</h3>
+      <h4>Frontend Developer</h4>
+      <p>Expert in React.js and passionate about modern UI designs.</p>
+    </div>
+    <div class="team-card">
+      <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Jane">
+      <h3>Jane Smith</h3>
+      <h4>UI/UX Designer</h4>
+      <p>Creates elegant user interfaces with a human-centered approach.</p>
+    </div>
+    <div class="team-card">
+      <img src="https://randomuser.me/api/portraits/men/65.jpg" alt="Michael">
+      <h3>Michael Lee</h3>
+      <h4>Backend Developer</h4>
+      <p>Builds robust APIs and handles databases with efficiency.</p>
+    </div>
+    <div class="team-card">
+      <img src="https://randomuser.me/api/portraits/women/29.jpg" alt="Sarah">
+      <h3>Sarah Johnson</h3>
+      <h4>Project Manager</h4>
+      <p>Leads the team with agility and ensures timely delivery.</p>
+    </div>
+  </div>
+</body>
+</html>
